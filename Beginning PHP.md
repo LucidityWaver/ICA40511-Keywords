@@ -59,3 +59,29 @@ The following code works the same way:
 $msg = "world!";
 echo "Hello " . $msg;
 ```
+
+PHP is a *loosely typed* language. This is similar to Javascript and not at all like Java.
+
+In PHP, you will not declare a type for variables as PHP will convert variables to the correct type based on the data they are assigned.
+
+PHP supports local and global variables. Local variables can only be referenced inside the function in which they're declared.
+Global variables cannot be used inside a function unless the global keyword is used. Global variables are also stored in an array called `$GLOBALS[]`
+
+A global variable is stored in the $GLOBALS[] array by name. The global variable `$x` can be used from the global array as `$GLOBALS['x']`
+
+In addition, PHP static variables are local variables that stay in memory between function calls. When a function is called a second time, the variable still exists and retains the value from the previous call. See the example below or on the [w3c tutorial](http://www.w3schools.com/php/showphp.asp?filename=demo_var_static)
+```
+<?php
+function myTest() {
+     static $x = 0;
+     echo $x;
+     $x++;
+}
+
+myTest();
+echo "<br>";
+myTest();
+echo "<br>";
+myTest();
+?>  
+```
