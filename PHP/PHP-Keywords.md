@@ -1,5 +1,5 @@
 #PHP Keywords
-**Note: PHP Keywords, classes, functions and user-defined functions are not case sensitive
+**Note: PHP Keywords, classes, functions and user-defined functions are not case sensitive**
 
 **global:** Used inside a function to specify that an existing global variable is used in this function. Example below.
 ```
