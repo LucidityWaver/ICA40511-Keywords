@@ -69,7 +69,7 @@ PHP is a *loosely typed* language. This is similar to Javascript and not at all 
 
 In PHP, you will not declare a type for variables as PHP will convert variables to the correct type based on the data they are assigned.
 
-PHP supports the following data types: String, Integer, Float, Boolean, Array, Object, NULL & Resource.
+PHP supports the following data types: String, Integer, Float, Boolean, Array, Object, NULL & Resource. Note: There is *almost* no difference with PHP between float, double or `real` as all such values are treated as double by C, which PHP is built from. The gettype() method will return double on a float, but this method shouldn't be used anyway. [More information](http://stackoverflow.com/questions/3280892/difference-between-float-and-double-in-php)
 
 PHP supports local and global variables. Local variables can only be referenced inside the function in which they're declared.
 
