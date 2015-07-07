@@ -37,7 +37,7 @@ echo "Helo" . /*You can use multi-line comments to block part of a line in PHP *
 
 As you'll see above, instead of using + to join (concatenate) strings in PHP, a single `.` (dot / period character) is used.
 
-In PHP, all keywords, classes, functions and user-defined functions are not case-sensitive. `eCHo` works the same as `EcHo` and `ECHO`.
+In PHP, **all keywords, classes, functions and user-defined functions are not case-sensitive**. `eCHo` works the same as `EcHo` and `ECHO`.
 
 Variables in PHP are declared by prefixing the `$` dollar character.
 
@@ -47,11 +47,11 @@ $i = 9;
 $d = 5.5;
 ```
 Notes: [from w3c schools tutorial](http://www.w3schools.com/php/php_variables.asp)
--A variable starts with the $ sign, followed by the name of the variable
--A variable name must start with a letter or the underscore character
--A variable name cannot start with a number
--A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
--Variable names are case-sensitive ($age and $AGE are two different variables)
+- A variable starts with the $ sign, followed by the name of the variable
+- A variable name must start with a letter or the underscore character
+- A variable name cannot start with a number
+- A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+- **Variable names are case-sensitive ($age and $AGE are two different variables)**
 
 In PHP, you can output variables using echo without performing a concatenation using `.`
 
