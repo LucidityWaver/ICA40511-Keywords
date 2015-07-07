@@ -11,11 +11,16 @@ PHP opening and closing tags must appear to identify PHP code.
 `<?php`
 `?> `
 
-The `echo` command in PHP is used for text output.
+The `echo` and `print` commands in PHP are used for text output. `print` has a return value of 1, so it can be used in expressions. `echo` has no return value, can accept multiple paremeters (although it is rarely used) and is marginally faster than print.
 
 `echo "Hello world";`
+`echo "This ", "string ", "was ", "made ", "with multiple parameters.";`
 
-A short-echo command can be found in php in two forms. `<? ?>` and `<=? ?>`. The first of these is not recommended.
+`print "<h2>Hello world!</h2>";`
+
+Note that `print` and `echo` can include html tags.
+
+A short-echo command can be found in php in two forms. `<? ?>` and `<=? ?>`. The first of these is not recommended as it can cause conflicts, such as with xml.
 
 `<=? ?>` can be used when you know that only php versions 5.4 and above will be used. [Click here for more information](http://programmers.stackexchange.com/a/151694).
 
@@ -64,10 +69,13 @@ PHP is a *loosely typed* language. This is similar to Javascript and not at all 
 
 In PHP, you will not declare a type for variables as PHP will convert variables to the correct type based on the data they are assigned.
 
+PHP supports the following data types: String, Integer, Float, Boolean, Array, Object, NULL & Resource.
+
 PHP supports local and global variables. Local variables can only be referenced inside the function in which they're declared.
+
 Global variables cannot be used inside a function unless the global keyword is used. Global variables are also stored in an array called `$GLOBALS[]`
 
-A global variable is stored in the $GLOBALS[] array by name. The global variable `$x` can be used from the global array as `$GLOBALS['x']`
+A global variable is stored in the `$GLOBALS[]` array by name. A global variable called `$x` can be used from the global array as `$GLOBALS['x']`
 
 In addition, PHP static variables are local variables that stay in memory between function calls. When a function is called a second time, the variable still exists and retains the value from the previous call. See the example below or on the [w3c tutorial](http://www.w3schools.com/php/showphp.asp?filename=demo_var_static)
 ```
@@ -85,3 +93,4 @@ echo "<br>";
 myTest();
 ?>  
 ```
+
