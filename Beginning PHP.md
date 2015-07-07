@@ -10,8 +10,6 @@ For **[Windows users](http://windows.php.net/download#php-5.6)**, just download 
 
 Once you have PHP available on your computer, you will need to [set the path environment variables](http://www.computerhope.com/issues/ch000549.htm) on your OS to point to the PHP folder, or you will need to store all your PHP projects in a folder within your PHP folder.
 
-For **Mac users**, PHP is bundled with your operating system and should be accessible. You will want to ensure you update to the latest version. More information for Mac users can be found [here](http://php.net/manual/en/install.macosx.php). However, you may find it difficult to understand and may require 
-
-
+For **Mac users**, PHP is bundled with your operating system and should be accessible. You will want to ensure you update to the latest version. More information for Mac users can be found [here](http://php.net/manual/en/install.macosx.php). However, you may find it difficult to understand. I would recommend taking a look and seeing whether you can get it running. If you succeed, add any useful information to this file. If you can't get it working, please let me know and I'll see if I can get it running.
 
 PHP, as of version 5.4, comes with an inbuilt web server. This means that you can test PHP code on a website without running additional software such as Apache.
