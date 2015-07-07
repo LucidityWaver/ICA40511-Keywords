@@ -14,7 +14,7 @@ PHP opening and closing tags must appear to identify PHP code.
 
 Like Java, php statements end with a semi-colon `;`
 
-###Text Output
+###Displaying Output
 The `echo` and `print` commands in PHP are used for text output. `print` has a return value of 1, so it can be used in expressions. `echo` has no return value, can accept multiple paremeters (although it is rarely used) and is marginally faster than print.
 
 `echo "Hello world";`
@@ -23,6 +23,14 @@ The `echo` and `print` commands in PHP are used for text output. `print` has a r
 `print "<h2>Hello world!</h2>";`
 
 Note that `print` and `echo` can include html tags.
+**Note: While single quotations `'` can be used for Strings in PHP, they do not expand escape characters or variables**
+'''
+<?php
+echo "this will output as intended\n";
+echo 'this will not output as intended\n';
+echo ' so will be on the same line.';
+?>
+'''
 
 A short-echo command can be found in php in two forms. `<? ?>` and `<=? ?>`. The first of these is not recommended as it can cause conflicts, such as with xml.
 
@@ -49,6 +57,14 @@ echo "Hello $msg";
 ```
 $msg = "world!";
 echo "Hello " . $msg;
+```
+
+Finally, you can also combine the concatenate operator with the assignment operator `.=`
+```
+$msg = "there";
+echo "Hello " . $msg; //output: Hello there
+$msg .= ", beautiful world.";
+echo "Hello " . $msg; //output: Hello there, beautiful world.
 ```
 
 ###PHP Case Sensitivity
@@ -107,8 +123,9 @@ myTest();
 ?>  
 ```
 
-###PHP 5 String Methods
-These simple examples are summarised from the [w3c tutorial](http://www.w3schools.com/php/php_string.asp).
+###Common PHP 5 String Functions
+These common examples are summarised from the [w3c tutorial](http://www.w3schools.com/php/php_string.asp).
+More PHP String functions can be found [on w3c](http://www.w3schools.com/php/php_ref_string.asp) or in the [PHP Manual](http://php.net/manual/en/ref.strings.php)
 
 **Note: An exception is that w3c tutorial is not clear that the replace function replaces ALL instances of that text.**
 
@@ -137,3 +154,62 @@ Replace part of a string with a different set of characters for every match of a
 echo str_replace("world", "Dolly", "Hello world!"); // outputs Hello Dolly!
 echo str_replace("world", "Dolly", "Hello world world world!"); // outputs Hello Dolly Dolly Dolly!
 ```
+
+###Constants
+A constant in PHP is an identifier for a value that cannot be changed. Similar to final values in Java.
+
+Constants are not identified with a `$` and are automatically global across the entire script.
+
+A PHP constant is declared using the define function, which has the signature define(*name*, *value*, *case-insensitive*)
+
+The default value for the *case-insensitive* parameter is false.
+```
+define("PI", 3.1415926535897932384626);
+echo PI;
+```
+As the *case-insensitive* parameter was left out, the default of false was used.
+```
+define("VERSION", "v0.12", true)
+echo vErsIon;
+```
+
+###PHP Operators
+An overview of operators in PHP can be found on [w3c shools](http://www.w3schools.com/php/php_operators.asp).
+
+One thing that may not be clear is that, due to PHP's loose typing, these operators do not always behave the way you might expect. As an example, performing addtion on two strings does not concatenate the strings.
+
+This is especially true when using comparison operators, such as `==`, `===`, `!=` & `!==`.
+
+When comparing values with `==` or `!=`, PHP performs *type juggling* first so that the values are treated as the same type.
+```
+$a = "6";
+$b = 6;
+echo $a == $b; //output: true;
+```
+
+PHP will even convert numbers found in strings that do not only contain numbers.
+
+`echo 5 + "10 abdefg"; //output: 15`
+
+This is important as unexpected comparisons against values such as NAN, Null and array() all produce true or false values that may be confusing to debug. Comparisons against NAN always return false, even against itself.
+
+Example of this behaviour can be seen [here](http://www.phptherightway.com/pages/The-Basics.html).
+
+More information can be found in the PHP documentation [here](http://php.net/language.operators.comparison).
+
+I recommend looking at the comparison tables [here](http://php.net/types.comparisons) and bookmarking the page for later reference.
+
+**Another file will be created later for more detail on PHP operators**
+
+One operator you may not be familiar with is the exclusive OR (XOR) operator. XOR tests that only, and only one, one of two conditions are true. If both are true or if neither are true, the expression evaluates false.
+'''
+echo (4 > 3 XOR 4 > 5); //true, as 4 is greater than 3 (true) and 4 is not greater than 5 (false)
+echo (4 < 3 XOR 4 > 5); //false, as 4 is not less than than 3 (false) and 4 is not greater than 5 (false)
+echo (4 > 3 XOR 4 < 5); //false, as 4 is greater than 3 (true) and 4 is less than 5 (true)
+'''
+
+###PHP if, if...else, if...else-if & switch statements
+These statements funtion pretty much identically to Java and Javascript, with the exception of PHP comparison operator concerns noted above in the PHP Operators section. Remember to ensure that the comparisons you intend to make is the comparison your code is performing.
+
+###PHP Loops: while, do...while & for
+Pretty much identical to Java & Javascript.
