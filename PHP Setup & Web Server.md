@@ -28,4 +28,4 @@ echo "Welcome to PHP";
 ?>
 ```
 
-With the root directory test selected and the php web server, entering the address http://localhost:8000/test/test.php into my browsers displays the message Welcome to PHP.
+With the root directory test selected and the php web server, entering the address http://localhost:8000/test.php into my browsers displays the message Welcome to PHP.
