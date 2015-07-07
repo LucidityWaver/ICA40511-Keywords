@@ -107,3 +107,32 @@ myTest();
 ?>  
 ```
 
+###PHP 5 String Methods
+These simple examples are summarised from the [w3c tutorial](http://www.w3schools.com/php/php_string.asp).
+**Note: An exception is that w3c tutorial is not clear that the replace function replaces ALL instances of that text.**
+
+Get the length of a string using `strlen()` function
+```
+echo strlen("Hello world!"); //Outputs 12
+```
+
+Count the number of words in a string using `str_word_count`
+```
+echo str_word_count("Hello world!"); // outputs 2
+```
+
+Reverse a string
+```
+echo strrev("Hello world!"); // outputs !dlrow olleH
+```
+
+Search for the start position of a substring. Note: The position of the first character in a string is 0, not 1.
+```
+echo strpos("Hello world!", "world"); // outputs 6
+```
+
+Replace part of a string with a different set of characters for every match of a given value.
+```
+echo str_replace("world", "Dolly", "Hello world!"); // outputs Hello Dolly!
+echo str_replace("world", "Dolly", "Hello world world world!"); // outputs Hello Dolly Dolly Dolly!
+```
