@@ -56,35 +56,60 @@ $msg .= ", beautiful world.";
 echo "Hello " . $msg; //output: Hello there, beautiful world.
 ```
 
-###String literals, Strings, nowdoc and heredoc
+###Strings & Literal Strings
 
 Along with double quotations `"`, single quotations `'` can also be used for Strings in PHP.
 
-However, these are considered string literals as they do not expand escape characters or variables**
-'''
+However, these are considered literal strings as they do not expand escape characters or variables.
+```
 <?php
 $a = "Variables only expand in double quotes.";
 echo "This will output as intended. $a \n";
 echo 'This will not output as intended\n';
 echo ' so this will still be on the same line $a \n.';
 ?>
-'''
-Output: This will output as intended. Variables only expand in double quotes.
+```
+Output:
+```
+This will output as intended. Variables only expand in double quotes.
+This will not output as intended\n so this will still be on the same line $a \n
+```
 
-//This will not output as intended\n so this will still be on the same line $a \n
+As with Java and Javascript, you can also use single or double quotation marks inside a String enclosed by the other type.
+```
+echo "Single quotations are often needed in text, such as to denote a quote or in the possessive form of a name. e.g 'Mary's'";
+```
 
-
-PHP v5.3 introduced heredoc and nowdoc syntax. As v5.3 is new, please be wary of using these when interacting with older versions of PHP.
+###Nowdoc & Heredoc
+PHP v5.3 introduced heredoc and nowdoc syntax. As v5.3 is relatively new, avoid using these when your code may interact with older versions of PHP or when using older versions.
 
 Both of these offer a way to format strings without worrying about concatenating new lines or including new line characters.
 
-Heredoc `<<<` can be used for Strings like single quotations `'` and nowdoc can be used for Strings like double quotations `"`
+Heredoc can be used for literal strings like single quotations `'`.
 
-Heredoc is 
+Nowdoc can be used for Strings like double quotations `"`.
 
+Both are declared using three left angle brackets `<<<` followed by an identifying name. Nowdoc encloses the identifying name in single quotations `'` while heredoc does not. The heredoc or nowdoc ends when the identifying name is repeated on a separate line with no other characters (including spaces) except the semi-colon `;` to terminate the statement.
 
-As with Java and Javascript, you can also use single or double quotation marks inside a String defined by the other type.
-echo "Single quotes are sometimes needed, such as in the possessive form of a name, such as 'Mary's'";
+```
+$msg = "Interpolated variable";
+$var <<< hDOC
+This is the first line of text.
+This is the second line of text including an {$msg}.
+Third and final line. No concatenation needed.
+hDOC;
+echo $var;
+```
+
+```
+$msg = 'As with single line strings, nowdoc is literal. It cannot interpolate variables';
+$var <<< nDOC
+This is the first line of text.
+This is the second line of text including the variable name $msg but not its value.
+Third and final line. No concatenation or \n newline characters needed.
+hDOC;
+echo $var;
+```
 
 ###Commenting
 Comments in PHP are similar to Java comments:
