@@ -109,6 +109,7 @@ myTest();
 
 ###PHP 5 String Methods
 These simple examples are summarised from the [w3c tutorial](http://www.w3schools.com/php/php_string.asp).
+
 **Note: An exception is that w3c tutorial is not clear that the replace function replaces ALL instances of that text.**
 
 Get the length of a string using `strlen()` function
