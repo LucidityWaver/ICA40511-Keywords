@@ -1,6 +1,6 @@
-#Changelog v0.1
+#Changelog v0.11
 
-Added PHP setup information and introduction to PHP web server in file Beginning PHP. Note: This information should be removed and placed in another file *Setting up PHP*
+Added PHP setup information and introduction to PHP web server in file [PHP Setup & Web Server](https://github.com/LucidityWaver/ICA40511-Keywords/blob/master/PHP%20Setup%20%26%20Web%20Server.md)
 
-##Planned Changes
-Move setup and web server information to a file *Setting up PHP*
+##Planned Changes v0.11
+Add basic PHP syntax information to Beginning PHP.
