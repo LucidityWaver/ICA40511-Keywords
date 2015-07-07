@@ -23,18 +23,68 @@ The `echo` and `print` commands in PHP are used for text output. `print` has a r
 `print "<h2>Hello world!</h2>";`
 
 Note that `print` and `echo` can include html tags.
-**Note: While single quotations `'` can be used for Strings in PHP, they do not expand escape characters or variables**
-'''
-<?php
-echo "this will output as intended\n";
-echo 'this will not output as intended\n';
-echo ' so will be on the same line.';
-?>
-'''
 
 A short-echo command can be found in php in two forms. `<? ?>` and `<=? ?>`. The first of these is not recommended as it can cause conflicts, such as with xml.
 
 `<=? ?>` can be used when you know that only php versions 5.4 and above will be used. [Click here for more information](http://programmers.stackexchange.com/a/151694).
+
+###Concatenating String Output
+As you'll see above, instead of using + to join (concatenate) strings in PHP, a single `.` (dot / period character) is used.
+
+In PHP, you can insert variables to strings without concatenation by including the variable directly in the string. This is called *interpolation*. Both of the following examples achieve the same result, but one is using concatenation and one is using interpolation. As you will see, variables are identified using the dollar symbol `$` character.
+```
+$msg = "world!"; //variable declaration
+echo "Hello $msg";
+```
+```
+$msg = "world!";
+echo "Hello " . $msg;
+```
+
+When interpolating variables into a String, the variable may need to be surrounded by curly braces `{` `}` so it can be placed directly next to other text.
+
+```
+$msg = "world";
+echo "Hello {$msg}!;
+```
+
+You can also combine the concatenate operator with the assignment operator `.=`
+```
+$msg = "there";
+echo "Hello " . $msg; //output: Hello there
+$msg .= ", beautiful world.";
+echo "Hello " . $msg; //output: Hello there, beautiful world.
+```
+
+###String literals, Strings, nowdoc and heredoc
+
+Along with double quotations `"`, single quotations `'` can also be used for Strings in PHP.
+
+However, these are considered string literals as they do not expand escape characters or variables**
+'''
+<?php
+$a = "Variables only expand in double quotes.";
+echo "This will output as intended. $a \n";
+echo 'This will not output as intended\n';
+echo ' so this will still be on the same line $a \n.';
+?>
+'''
+Output: This will output as intended. Variables only expand in double quotes.
+
+//This will not output as intended\n so this will still be on the same line $a \n
+
+
+PHP v5.3 introduced heredoc and nowdoc syntax. As v5.3 is new, please be wary of using these when interacting with older versions of PHP.
+
+Both of these offer a way to format strings without worrying about concatenating new lines or including new line characters.
+
+Heredoc `<<<` can be used for Strings like single quotations `'` and nowdoc can be used for Strings like double quotations `"`
+
+Heredoc is 
+
+
+As with Java and Javascript, you can also use single or double quotation marks inside a String defined by the other type.
+echo "Single quotes are sometimes needed, such as in the possessive form of a name, such as 'Mary's'";
 
 ###Commenting
 Comments in PHP are similar to Java comments:
@@ -43,28 +93,7 @@ Comments in PHP are similar to Java comments:
 \\single line comment
 #Another type of single line comment
 /*Multi-line comment*/
-echo "Helo" . /*You can use multi-line comments to block part of a line in PHP */ "world!";
-```
-
-###Concatenating String Output
-As you'll see above, instead of using + to join (concatenate) strings in PHP, a single `.` (dot / period character) is used.
-
-In PHP, you can concatenate variables to strings without the `.` by including the variable directly in the string. Both of the following examples work the same way.
-```
-$msg = "world!";
-echo "Hello $msg";
-```
-```
-$msg = "world!";
-echo "Hello " . $msg;
-```
-
-Finally, you can also combine the concatenate operator with the assignment operator `.=`
-```
-$msg = "there";
-echo "Hello " . $msg; //output: Hello there
-$msg .= ", beautiful world.";
-echo "Hello " . $msg; //output: Hello there, beautiful world.
+echo "Hello" . /*You can use multi-line comments to block part of a line in PHP */ "world!";
 ```
 
 ###PHP Case Sensitivity
