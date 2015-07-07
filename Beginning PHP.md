@@ -6,11 +6,15 @@ Much of the information in the above guide is useful for experienced programmers
 
 To begin with take a look at [this file](https://github.com/LucidityWaver/ICA40511-Keywords/blob/master/PHP%20Setup%20%26%20Web%20Server.md) for instructions on, downloading and setting up the latest version of PHP and to learn how to set up the inbuilt PHP Web Server.
 
+###Declaring PHP Code & Statements
 PHP opening and closing tags must appear to identify PHP code.
 
 `<?php`
 `?> `
 
+Like Java, php statements end with a semi-colon `;`
+
+###Text Output
 The `echo` and `print` commands in PHP are used for text output. `print` has a return value of 1, so it can be used in expressions. `echo` has no return value, can accept multiple paremeters (although it is rarely used) and is marginally faster than print.
 
 `echo "Hello world";`
@@ -24,8 +28,7 @@ A short-echo command can be found in php in two forms. `<? ?>` and `<=? ?>`. The
 
 `<=? ?>` can be used when you know that only php versions 5.4 and above will be used. [Click here for more information](http://programmers.stackexchange.com/a/151694).
 
-Like Java, php statements end with a semi-colon `;`
-
+###Commenting
 Comments in PHP are similar to Java comments:
 
 ```
@@ -35,6 +38,7 @@ Comments in PHP are similar to Java comments:
 echo "Helo" . /*You can use multi-line comments to block part of a line in PHP */ "world!";
 ```
 
+###Concatenating String Output
 As you'll see above, instead of using + to join (concatenate) strings in PHP, a single `.` (dot / period character) is used.
 
 In PHP, you can concatenate variables to strings without the `.` by including the variable directly in the string. Both of the following examples work the same way.
@@ -46,8 +50,12 @@ echo "Hello $msg";
 $msg = "world!";
 echo "Hello " . $msg;
 ```
+
+###PHP Case Sensitivity
 In PHP, **all keywords, classes, functions and user-defined functions are not case-sensitive**. `eCHo` works the same as `EcHo` and `ECHO`.
 
+
+###Variables
 Variables in PHP are declared by prefixing the `$` dollar character.
 
 ```
@@ -62,6 +70,7 @@ Notes: [from w3c schools tutorial](http://www.w3schools.com/php/php_variables.as
 - A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
 - **Variable names are case-sensitive ($age and $AGE are two different variables)**
 
+###Datatypes
 PHP is a *loosely typed* language. This is similar to Javascript and not at all like Java.
 
 In PHP, you will not declare a type for variables as PHP will convert variables to the correct type based on the data they are assigned.
@@ -74,6 +83,7 @@ See [here](http://www.w3schools.com/php/php_datatypes.asp) for more detail on ph
 
 Note: There is *almost* no difference with PHP between float, double or `real` as all such values are treated as double by C, which PHP is built from. The gettype() method will return double on a float, but this method shouldn't be used anyway. [More information](http://stackoverflow.com/questions/3280892/difference-between-float-and-double-in-php)
 
+###Variable Scope (Global, local & static)
 PHP supports local and global variables. Local variables can only be referenced inside the function in which they're declared.
 
 Global variables cannot be used inside a function unless the global keyword is used. Global variables are also stored in an array called `$GLOBALS[]`
