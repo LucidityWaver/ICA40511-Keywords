@@ -17,7 +17,7 @@ The `echo` command in PHP is used for text output.
 
 A short-echo command can be found in php in two forms. `<? ?>` and `<=? ?>`. The first of these is not recommended.
 
-`<=? ?>` can be used when you know that only php versions 5.4 and above will be used. [more information](http://programmers.stackexchange.com/a/151694).
+`<=? ?>` can be used when you know that only php versions 5.4 and above will be used. [Click here for more information](http://programmers.stackexchange.com/a/151694).
 
 Like Java, php statements end with a semi-colon `;`
 
@@ -34,3 +34,28 @@ As you'll see above, instead of using + to join (concatenate) strings in PHP, a 
 
 In PHP, all keywords, classes, functions and user-defined functions are not case-sensitive. `eCHo` works the same as `EcHo` and `ECHO`.
 
+Variables in PHP are declared by prefixing the `$` dollar character.
+
+```
+$msg = "Hello world!";
+$i = 9;
+$d = 5.5;
+```
+Notes: [from w3c schools tutorial](http://www.w3schools.com/php/php_variables.asp)
+-A variable starts with the $ sign, followed by the name of the variable
+-A variable name must start with a letter or the underscore character
+-A variable name cannot start with a number
+-A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+-Variable names are case-sensitive ($age and $AGE are two different variables)
+
+In PHP, you can output variables using echo without performing a concatenation using `.`
+
+```
+$msg = "world!";
+echo "Hello $msg";
+```
+The following code works the same way:
+```
+$msg = "world!";
+echo "Hello " . $msg;
+```
