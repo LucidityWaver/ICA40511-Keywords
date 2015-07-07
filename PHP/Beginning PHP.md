@@ -110,7 +110,7 @@ Third and final line. No concatenation or \n newline characters needed.
 hDOC;
 echo $var;
 ```
-See [here](http://www.phptherightway.com/pages/The-Basics.html#strings) or in the [php manual](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc) for more information and examples on heredoc and nowdoc.
+See **[here](http://www.phptherightway.com/pages/The-Basics.html#strings)** or in the **[php manual](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)** for more information and examples on heredoc and nowdoc.
 
 ###Commenting
 Comments in PHP are similar to Java comments, with `#` and `\\` both denoting single line comments:
