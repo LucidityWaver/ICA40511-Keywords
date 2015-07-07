@@ -2,9 +2,9 @@
 
 Added PHP setup information and introduction to PHP web server in file [PHP Setup & Web Server](https://github.com/LucidityWaver/ICA40511-Keywords/blob/master/PHP/PHP%20Setup%20%26%20Web%20Server.md)
 
-Information including PHP opening & closing tags, using `echo` to output text and declaring variables added to Beginning PHP.
 
-Additional PHP Syntax including:
+
+Updated the Beginning PHP file. Additional basic PHP syntax information includes:
 * Differentiating between literal Strings using single quotations `'` and String using double quotations `"`
 * Heredoc and Nowdoc syntax information and resource links
 * Corrected information relating to including variables in strings (interpolating, not concatenation)
