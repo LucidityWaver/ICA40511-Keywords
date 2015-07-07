@@ -6,7 +6,12 @@ Much of the information in the above guide is useful for experienced programmers
 
 To begin with, download the latest version of PHP.
 
-For [Windows users](http://windows.php.net/download#php-5.6), just download PHP as the zip folder and unzip it wherever you want your PHP directory. This will only include a standard set-up, and more advanced aspects will require custom compilation or finding a pre-configured version that suits your needs.
+For **[Windows users](http://windows.php.net/download#php-5.6)**, just download PHP as the zip folder and unzip it wherever you want your PHP directory. This will only include a standard set-up, and more advanced aspects will require custom compilation or finding a pre-configured version that suits your needs.
 
-For [Mac users], PHP is bundled with your operating system and should be accessible. You will want to ensure you update to the latest version. More information for Mac users can be found [here](http://php.net/manual/en/install.macosx.php). However, you may find it difficult to understand and may require 
+Once you have PHP available on your computer, you will need to [set the path environment variables](http://www.computerhope.com/issues/ch000549.htm) on your OS to point to the PHP folder, or you will need to store all your PHP projects in a folder within your PHP folder.
 
+For **Mac users**, PHP is bundled with your operating system and should be accessible. You will want to ensure you update to the latest version. More information for Mac users can be found [here](http://php.net/manual/en/install.macosx.php). However, you may find it difficult to understand and may require 
+
+
+
+PHP, as of version 5.4, comes with an inbuilt web server. This means that you can test PHP code on a website without running additional software such as Apache.
