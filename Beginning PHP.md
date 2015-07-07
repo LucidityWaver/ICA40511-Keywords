@@ -24,7 +24,7 @@ To access the web server, open your browser and type localhost:8000. You should 
 
 The next step is to specify a root directory/folder for the web server. Include the path information for the root folder after the localhost:8000 argument in your command. Your default root folder is the folder command line is currently pointing to.
 
-`php -S localhost:8000 -t test
+`php -S localhost:8000 -t test`
 
 The next step, is to include a php file for the server to read when someone enters the server address. My file test.php contains the following code:
 
