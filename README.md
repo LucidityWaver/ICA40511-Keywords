@@ -5,4 +5,4 @@ This git is for noting keywords that are likely to be used in upcoming quizzes a
 
 Sharing other notes, links to related materials and code snippets is encouraged.
 
-[Formatting Information](https://help.github.com/articles/markdown-basics/)
+Please see the [Formatting Information](https://help.github.com/articles/markdown-basics/) page for .md (mark-down) files such as this one before editing documents.
