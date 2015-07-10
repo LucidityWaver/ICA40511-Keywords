@@ -60,7 +60,7 @@ echo "Hello " . $msg; //output: Hello there, beautiful world.
 
 Along with double quotations `"`, single quotations `'` can also be used for Strings in PHP.
 
-However, these are considered literal strings as they do not expand escape characters or variables.
+However, these are considered literal strings as they do not expand most escape characters or variables. Literal strings can still use an escape `\` for the single quote character `\'` and for the backslash character `\\`.
 ```
 <?php
 $a = "Variables only expand in double quotes.";
@@ -107,7 +107,7 @@ $var <<< nDOC
 This is the first line of text.
 This is the second line of text including the variable name $msg but not its value.
 Third and final line. No concatenation or \n newline characters needed.
-hDOC;
+nDOC;
 echo $var;
 ```
 See **[here](http://www.phptherightway.com/pages/The-Basics.html#strings)** or in the **[php manual](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)** for more information and examples on heredoc and nowdoc.
@@ -314,8 +314,6 @@ echo calcSum(5, 7); //Arguments passed 5 & 7
 ```
 
 ###Arrays in PHP
-As with Java, PHP arrays can store values using index numbers starting from 0.
-
 Arrays in PHP are created using the array() function and the count() function returns an array's length. See the examples below.
 
 ```
@@ -323,6 +321,14 @@ $indexArray = array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 echo "index position 4 contains: " . $indexArray[4]; //Prints 4
 echo "<br>Length of the array: " . count($indexArray);
 ```
+
+In PHP, arrays are actually an implementation of an ordered map. This means that a key, or reference name, is used for each value (or position) in the array. In Java, we used index-based numbers for positions in an array. Index numbers serve as a *key*. In both Java and PHP, these index numbers are created automatically.
+
+
+##Content below is a work in progress and needs updating.
+
+See the [php manual](http://php.net/manual/en/language.types.array.php) for more information.
+As with Java, PHP arrays can store values using index numbers starting from 0.
 
 You can also assign index values manually and you can do so inside the array() function. However, any automatically assigned index will increment from the largest previous index value.
 
@@ -336,7 +342,7 @@ $array = array(
 );
 ```
 
-PHP supports **Associative Arrays**, in which a unique name or keyword keyword is used as a reference for each value in the array. Numerical index arrays are 
+PHP supports **associative arrays**, in which a unique name or keyword keyword is used as a reference for each value in the array. Numerical index arrays are actually the same implementation. More information [here]()
 
 ```
 $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
