@@ -291,15 +291,54 @@ Unlike Java, PHP uses the word function over the word method, but they are inter
 As with javascript, functions in PHP begin with the keyword function and then the name for the function. PHP functions are not case sensitive.
 ```
 function printSum($a, $b) { 
-     echo $a + $b;
+     echo $a + $b; //5 + 7
 }
-printSum(5, 7);
+printSum(5, 7); //Arguments passed 5 & 7
 ```
 
 PHP allows functions to have default values for parameters. If an argument is not provided, the default value will be used.
 ```
-function printNumber($a = 1) { 
-     echo $a;
+function printNumber($a = 1) { //default value of 1
+     echo $a . "<br>;
 }
-printNumber();
+printNumber(); //No value provided, prints 1.
+printNumber(33); //The number 33 will be printed.
+```
+
+PHP functions can have return values. In PHP, you do not have to specify a return type in advance.
+```
+function calcSum($a, $b) { 
+     return $a + $b; //return 5 + 7
+}
+echo calcSum(5, 7); //Arguments passed 5 & 7
+```
+
+###Arrays in PHP
+As with Java, PHP arrays can store values using index numbers starting from 0.
+
+Arrays in PHP are created using the array() function and the count() function returns an array's length. See the examples below.
+
+```
+$indexArray = array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+echo "index position 4 contains: " . $indexArray[4]; //Prints 4
+echo "<br>Length of the array: " . count($indexArray);
+```
+
+You can also assign index values manually and you can do so inside the array() function. However, any automatically assigned index will increment from the largest previous index value.
+
+```
+//Manual key (index) assignment inside the array() function:
+$array = array(
+         "a", //index 0 (automatically assigned)
+         "b", //index 1 (automatically assigned)
+    6 => "c", //index 6 (manually assigned)
+         "d", //index 7 (automatically assigned)
+);
+```
+
+PHP supports **Associative Arrays**, in which a unique name or keyword keyword is used as a reference for each value in the array. Numerical index arrays are 
+
+```
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+echo $age["Peter"]; //Prints 35
 ```
