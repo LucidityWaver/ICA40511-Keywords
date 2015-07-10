@@ -15,7 +15,7 @@ PHP opening and closing tags must appear to identify PHP code.
 Like Java, php statements end with a semi-colon `;`
 
 ###Displaying Output
-The `echo` and `print` commands in PHP are used for text output. `print` has a return value of 1, so it can be used in expressions. `echo` has no return value, can accept multiple paremeters (although it is rarely used) and is marginally faster than print.
+The `echo` and `print` commands in PHP are used for text output. `print` has a return value of 1, so it can be used in expressions. `echo` has no return value, can accept multiple paremeters and is marginally faster than print. Passing multiple parameters to echo is rarely used.
 
 `echo "Hello world";`
 `echo "This ", "string ", "was ", "made ", "with multiple parameters.";`
@@ -267,4 +267,39 @@ echo (4 > 3 XOR 4 < 5); //false, as 4 is greater than 3 (true) and 4 is less tha
 These statements funtion pretty much identically to Java and Javascript, with the exception of PHP comparison operator concerns noted above in the PHP Operators section. Remember to ensure that the comparisons you intend to make is the comparison your code is performing.
 
 ###PHP Loops: while, do...while & for
-Pretty much identical to Java & Javascript.
+The syntax for these loops is identical to Java & Javascript.
+
+###foreach loop
+PHP includes a foreach loop, which iterates over an array. Equivalent to the *enchanced for* loop in Java (which is also often referred to as a for-each loop).
+```
+foreach ($array as $value) {
+    //code to be executed;
+}
+```
+The foreach loop code takes the array by name and assigns each value, in order, to a variable *$value*. The *$value* variable can then be used in the body of the loop.
+```
+$colors = array("red", "green", "blue", "yellow");
+
+foreach ($colors as $value) {
+    echo "$value <br>";
+}
+```
+
+###PHP Functions
+Unlike Java, PHP uses the word function over the word method, but they are interchangeable.
+
+As with javascript, functions in PHP begin with the keyword function and then the name for the function. PHP functions are not case sensitive.
+```
+function printSum($a, $b) { 
+     echo $a + $b;
+}
+printSum(5, 7);
+```
+
+PHP allows functions to have default values for parameters. If an argument is not provided, the default value will be used.
+```
+function printNumber($a = 1) { 
+     echo $a;
+}
+printNumber();
+```
