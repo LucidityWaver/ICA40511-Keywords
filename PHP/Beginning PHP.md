@@ -322,16 +322,19 @@ echo "index position 4 contains: " . $indexArray[4]; //Prints 4
 echo "<br>Length of the array: " . count($indexArray);
 ```
 
-In PHP, arrays are actually an implementation of an ordered map. This means that a key, or reference name, is used for each value (or position) in the array. In Java, we used index-based numbers for positions in an array. Index numbers serve as a *key*. In both Java and PHP, these index numbers are created automatically.
+In PHP, arrays are actually an implementation of an ordered map. This means that a key, or reference name, is used for each value (or position) in the array. In Java we used index-based numbers for positions in an array and you can do the same in PHP. Index numbers serve as a *key*. In both Java and PHP these index numbers are created automatically starting from 0, but PHP allows the key to be chosen for each position of the array.
 
+For example, you can use a person's name as the *key* to unlock the person's age value. Compare the two examples below, which both print out the same value.
+```
+$age = array("35", "37", "43"); //index 0, 1, 2
+echo $age[0]; //Prints 35
+```
+```
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+echo $age["Peter"]; //Prints 35
+```
 
-##Content below is a work in progress and needs updating.
-
-See the [php manual](http://php.net/manual/en/language.types.array.php) for more information.
-As with Java, PHP arrays can store values using index numbers starting from 0.
-
-You can also assign index values manually and you can do so inside the array() function. However, any automatically assigned index will increment from the largest previous index value.
-
+In PHP, the values in an array that are not given a key are automatically assigned a number as the key. (the number assigned increments from the highest previously used number).
 ```
 //Manual key (index) assignment inside the array() function:
 $array = array(
@@ -342,9 +345,6 @@ $array = array(
 );
 ```
 
-PHP supports **associative arrays**, in which a unique name or keyword keyword is used as a reference for each value in the array. Numerical index arrays are actually the same implementation. More information [here]()
+Arrays using a key in PHP are also referred to as **associative arrays**. More information [here](http://php.net/manual/en/language.types.array.php)
 
-```
-$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
-echo $age["Peter"]; //Prints 35
-```
+The syntax for multidimensional arrays in PHP is the same as the syntax in Java. They are nested arrays. A 2D array is an array of arrays. A 3D array is an array of arrays of arrays.
