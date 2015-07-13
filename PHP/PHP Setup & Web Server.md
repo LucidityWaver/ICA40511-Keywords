@@ -3,11 +3,24 @@
 ###Windows Users
 For [Windows users](http://windows.php.net/download#php-5.6), just download PHP as the zip folder and unzip it wherever you want your PHP directory. This will only include a standard set-up, and more advanced aspects will require custom compilation or finding a pre-configured version that suits your needs.
 
-###Mac Users
-For Mac users, PHP is bundled with your operating system and should be accessible. However, it's recommended that you  update to the latest version. More information for Mac users can be found [here](http://www.phptherightway.com/#mac_setup). The easiest looking way seems to be using [Homebrew](http://brew.sh/). However, you may find it difficult to understand. I would recommend taking a look and seeing whether you can get it running. If you succeed, add any useful information to this file. If you can't get it working, please let me know and I'll see if I can get it running.
+Once you have PHP available on your computer, you will need to [set the path environment variables](http://www.computerhope.com/issues/ch000549.htm) to point to the PHP folder. You could also store all your PHP projects in a folder within your PHP folder, but this is a bad idea.
 
-###All users (I think)
-Once you have PHP available on your computer, you will need to [set the path environment variables](http://www.computerhope.com/issues/ch000549.htm) on your OS to point to the PHP folder, or you will need to store all your PHP projects in a folder within your PHP folder.
+###Mac Users
+PHP is bundled with Mac OS X, but may not be up to date. I'll guide you through installation with [Homebrew](http://brew.sh/), but other methods can be found.
+1. install Xcode which can be downloaded from the app store. 
+2. You will need to open the mac terminal application. Terminal can be found in the utilities folder in applications. You can follow this [video guide](https://www.youtube.com/watch?v=zw7Nd67_aFw).
+3. Run the command below in terminal. This can also found on the homepage of [Homebrew](http://brew.sh/).
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+4. Run the following four commands in order. [Also found here](https://github.com/Homebrew/homebrew-php#installation)
+  1. `brew tap homebrew/dupes`
+  2. `brew tap homebrew/versions`
+  3. `tap homebrew/homebrew-php`
+  4. `brew install php56`
+
+More information for Mac users can be found [here](http://www.phptherightway.com/#mac_setup).
+
 
 ###Setting up a PHP Web Server
 PHP, as of version 5.4, comes with an inbuilt web server. This means that you can test PHP code on a website without running additional software such as Apache.
