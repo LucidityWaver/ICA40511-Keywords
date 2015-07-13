@@ -7,9 +7,11 @@ Once you have PHP available on your computer, you will need to [set the path env
 
 ###Mac Users
 PHP is bundled with Mac OS X, but may not be up to date. I'll guide you through installation with [Homebrew](http://brew.sh/), but other methods can be found.
-1. install Xcode which can be downloaded from the app store. 
+
+1. install Xcode which can be downloaded from the app store.
 2. You will need to open the mac terminal application. Terminal can be found in the utilities folder in applications. You can follow this [video guide](https://www.youtube.com/watch?v=zw7Nd67_aFw).
 3. Run the command below in terminal. This can also found on the homepage of [Homebrew](http://brew.sh/).
+
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
