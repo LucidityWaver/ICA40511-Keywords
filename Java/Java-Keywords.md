@@ -1,4 +1,4 @@
-#Keywords for Java (Intermediate)
+#Java (Intermediate) Keywords
 
 Beginning Semester 2, 2015.
  
@@ -33,4 +33,12 @@ Supervisor supervisor = new Supervisor();
 printEmployee(supervisor);
 ```
 
-**:**
+**UML:** Unified Modelling Language
+
+**Abstract:** Existing as an idea without concrete implementation. 
+- An object cannot be created from an abstract class.
+- An abstract method inherited from a parent class must be implemented in a child class, or the child class must also be abstract.
+- Abstract classes are inherited using the `extends` keyword.
+ 
+**Interface:**
+
