@@ -217,7 +217,7 @@ Constants are not identified with a `$` and are automatically global across the 
 
 A PHP constant is declared using the define function, which has the signature define(*name*, *value*, *case-insensitive*)
 
-The default value for the *case-insensitive* parameter is false.
+The *case-insensitive* parameter decides wether the name of the constant is case sensitive. The default value for the *case-insensitive* parameter is false and can be left out for a case-insensitive name.
 ```
 define("PI", 3.1415926535897932384626);
 echo PI;
