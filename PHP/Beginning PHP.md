@@ -263,8 +263,8 @@ echo (4 < 3 XOR 4 > 5); //false, as 4 is not less than than 3 (false) and 4 is n
 echo (4 > 3 XOR 4 < 5); //false, as 4 is greater than 3 (true) and 4 is less than 5 (true)
 '''
 
-###PHP if, if...else, if...else-if & switch statements
-These statements funtion pretty much identically to Java and Javascript, with the exception of PHP comparison operator concerns noted above in the PHP Operators section. Remember to ensure that the comparisons you intend to make is the comparison your code is performing.
+###PHP if, if...else, if...elseif & switch statements
+These statements funtion pretty much identically to Java and Javascript with two exceptions. There is no space between else and if in an `elseif` statement in PHP. Comparisons in PHP operate differently as noted above in the PHP Operators section. Remember to ensure that the comparisons you intend to make is the comparison your code is performing.
 
 ###PHP Loops: while, do...while & for
 The syntax for these loops is identical to Java & Javascript.
