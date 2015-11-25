@@ -97,4 +97,4 @@ you can find more information about Java's Collections Framework [here](http://d
 
 ArrayLists in Java can store ArrayLists, creating what is referred to as a multi-dimensional array.
 Java (like JavaScript) does not support true multi-dimensional arrays.
-For more information, see file ["ArraysOfArrays.md"](https://github.com/LucidityWaver/ICA40511-Keywords/new/master/Java/ArraysOfArrays.md).
+For more information, see file ["ArraysOfArrays.md"](https://github.com/LucidityWaver/ICA40511-Keywords/blob/master/Java/ArraysOfArrays.md).
