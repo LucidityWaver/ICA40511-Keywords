@@ -12,6 +12,7 @@ To create the core of the website I implemented a three-column fluid-grid layout
 The design can be seen in the images below.
 
 #####Home Page
+![Hamilton IT Consulting Home Page](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonHome.png)
 
 #####Our Service Page
 
