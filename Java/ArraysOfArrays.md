@@ -5,7 +5,9 @@ Like JavaScript, Java does not actually support multi-dimensional arrays.
 
 Native support for multi-dimensional arrays looks like this: (example from C#)
 
-`int[,] array2D = new int[4, 2] { {1, 2}, { 3, 4 }, { 5, 6 }, { 7, 8 } };`
+```C#
+int[,] array2D = new int[4, 2] { {1, 2}, { 3, 4 }, { 5, 6 }, { 7, 8 } };
+```
 
 It's easy to visualize a multi-dimensional array as a table or matrix.
 ```
@@ -32,7 +34,7 @@ Below is an example in Java. The first part shows the declaration separately fro
 * A jagged array does not have the same amount of columns in every row.
 
 Another visualization can be found [here](http://stackoverflow.com/a/6631081)
-```
+```java
 int[][] arrOfInts; //Declaration
 arrOfInts = new int[5][]; //Initialization of outer 1D array 
 arrOfInts[0] = new int[5]; //Initialization of inner (nested) array. Length 5
@@ -53,7 +55,7 @@ arrOfInts[4] -> 0 0
 
 Another visualization can be found [here](http://stackoverflow.com/a/6631081)
 
-```
+```java
 int[][] arrayOfIntArrays = new int[4][2];
 for (int i = 0; i < arrayOfIntArrays.length(); i++) {
 	for (int j = 0; j < arrayOfIntArrays[i].length(); j++) {
@@ -71,4 +73,6 @@ Multi-dimensional ArrayLists are declared with two data types.
 * The first data type is the type of list (collection) that is to be stored.
 * The second data type is the data type that can be stored in the list declared as the first data type.
 
-`ArrayList<ArrayList<String>> strList = new ArrayList<>();`
+```java
+ArrayList<ArrayList<String>> strList = new ArrayList<>();
+```
