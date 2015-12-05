@@ -46,12 +46,13 @@ The task required use of a select menu to filter the final table; a bridging tab
 
 
 ####Data Entry Forms
-The forms used for data entry are also created dynamically from the database table. Date fields are supplied a jQuery plugin for selecting the date and fields are locked to the maximum length allowable by the schema.
+The forms used for data entry are also created dynamically from the database table. Fields lengths are given an upper limit and maximum character limits are locked to the length allowable by the schema.
 
 #####Consultant Table
 ![Hamilton IT Consulting - Consultant Form](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonEnterConsultant.png)
 
 #####Project Table
+Entry of dates is made easy using the jQuery plugin [datepick](http://keith-wood.name/datepick.HTML).
 ![Hamilton IT Consulting - Project Form Table](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonEnterProject.png)
 
 
