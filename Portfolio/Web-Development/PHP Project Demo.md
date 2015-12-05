@@ -52,7 +52,7 @@ The forms used for data entry are also created dynamically from the database tab
 ![Hamilton IT Consulting - Consultant Form](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonEnterConsultant.png)
 
 #####Project Table
-Entry of dates is made easy using the jQuery plugin [datepick](http://keith-wood.name/datepick.HTML).
+Entry of dates is made easy using the jQuery plugin - [Datepick v5.01](http://keith-wood.name/datepick.HTML).
 ![Hamilton IT Consulting - Project Form Table](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonEnterProject.png)
 
 
@@ -62,6 +62,7 @@ This form locks the Project Number field, as the desired project must already ha
 
 
 ###The Development Process
+
 
 ####Project Requirements
 The project was to be delivered in 3 stages:
