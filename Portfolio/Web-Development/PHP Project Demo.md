@@ -1,5 +1,8 @@
 ##Web Design Assessment Task - Hamilton IT Consulting
 
+![Hamilton IT Consulting Home Page](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonHome.png)
+
+
 ###The Project
 For the web development component of Holmesglen's IT Cert IV Programming course, students were required to design and create a website for the fictional company Hamilton IT Consulting. The website should follow the web design principles detailed in the course and facilitate interaction with a MySQL database using PHP.
 
