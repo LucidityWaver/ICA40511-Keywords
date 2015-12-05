@@ -2,22 +2,22 @@
 
 ###Table of Contents:
 ######Project Overview
-- [Project Requirements](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#Project-Requirements)
-- [Additional Features](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#Additional-Features)
+- [Project Requirements](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#project-requirements)
+- [Additional Features](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#additional-features)
 
 ######Design
-- [Fluid-Grid](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#Fluid-Grid)
+- [Fluid-Grid](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#fluid-grid)
 
 ######jQuery Plugins
-- [Datepick](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#Datepick)
-- [Tablesaw](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#Tablesaw)
+- [Datepick](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#datepick)
+- [Tablesaw](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#tablesaw)
 
 ######PHP
-- [Login](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#Login)
-- [Database Connection](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#Database-Connection)
-- [Generate Database Table](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#Generate-Tables)
-- [Generate Data Entry Form](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#Generate-Forms)
-- [Validation](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#Validation)
+- [Login](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#login)
+- [Database Connection](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#database-connection)
+- [Generate Database Table](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#generate-tables)
+- [Generate Data Entry Form](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#generate-forms)
+- [Validation](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#validation)
 
 ###Overview (Requirements and Features)
 
