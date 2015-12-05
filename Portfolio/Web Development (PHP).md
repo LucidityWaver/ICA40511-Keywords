@@ -29,7 +29,7 @@ To save space the mobile layout image hasn't been embedded, but it can be viewed
 
 
 ####Database Tables
-The tables on the website were created dynamically using column names and datatypes retrieved from the database table.
+The tables on the website are created dynamically using column names and datatypes retrieved from the database table.
 
 Additionally, the table information was made sortable and responsive client-side using a jQuery plugin - [Tablesaw v2.0.2](https://github.com/filamentgroup/tablesaw)
 
@@ -37,16 +37,27 @@ Additionally, the table information was made sortable and responsive client-side
 ![Hamilton IT Consulting - Consultant Table](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonConsultantTable.png)
 
 #####Project Table
-![Hamilton IT Consulting - Project Table](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonConsultantTable.png)
+![Hamilton IT Consulting - Project Table](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonProjectTable.png)
 
 
 #####Project-Consultant Table
-The task required use of a select menu on the final table; a bridging table to show the consultants assigned to each project.
+The task required use of a select menu to filter the final table; a bridging table recording the consultants assigned to each project.
 ![Hamilton IT Consulting - Project Consultant Table](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonProjectConsultantTable.png)
 
 
 ####Data Entry Forms
+The forms used for data entry are also created dynamically from the database table. Date fields are supplied a jQuery plugin for selecting the date and fields are locked to the maximum length allowable by the schema.
 
+#####Consultant Table
+![Hamilton IT Consulting - Consultant Form](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonEnterConsultant.png)
+
+#####Project Table
+![Hamilton IT Consulting - Project Form Table](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonEnterProject.png)
+
+
+#####Project-Consultant Table
+This form locks the Project Number field, as the desired project must already have been selected. A select menu is provided for the consultant to be assigned to the project, showing only those which are not already assigned to the project (and the current consultant, if editing a record).
+![Hamilton IT Consulting - Assign Project Consultant Form Table](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/HamiltonEnterProjectConsultant.png)
 
 
 ###The Development Process
