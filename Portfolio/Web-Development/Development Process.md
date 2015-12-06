@@ -7,6 +7,7 @@
 
 ######Design
 - [Fluid-Grid](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#fluid-grid)
+- [Collapsible Sets](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#collapsible-sets)
 
 ######jQuery Plugins
 - [Datepick](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/Web-Development/Development%20Process.md#datepick)
@@ -40,9 +41,30 @@ The project was required to be delivered in 3 stages:
   - A flowchart describing updating a staff assignment
 
 #####Additional Features
+Grouped by project stage, the full list of features for the website are as follows.
+1. Prototype
+- Responsive design layout using fluid grids
+- Collapsible sets
+- Embedded Map
+- Other custom CSS styling
+
+2. Basic Database Operations
+- Single page for generating tables from database
+- Single page for generating forms from db tables
+- Responsive and sortable tables with Tablesaw plugin
+- Date selection with Datepick plugin
+- Some referential integrity ensured on update or delete
+- Form validation
+
+3. Bridge Table Operations & Finalization
+- Functioning PHP login (fake authentication)
+- Select menu to filter bridging table
+- Select menu for consultant assignment to projects
+- Ensures referential integrity on update and delete
 
 ###Design
 #####Fluid-Grid
+#####Collapsible Sets
 
 ###jQuery Plugins
 #####Datepick
