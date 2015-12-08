@@ -69,7 +69,8 @@ The splash page is used to give the application time to load, if needed, and add
 
 #####Datebox Plugin
 ![Datebox Plugin](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/DateboxPlugin.png)
-Entry of date was simplified using the jQueryMobile plugin [DateBox](http://dev.jtsage.com/jQM-DateBox/). This reduced user entry requirements from one field for each year, month, day, hour or minute to a single field for each date or time combination. Note: The plugin has since been updated to work with jQuery UI and Bootstrap.
+
+Date and time entry was simplified using the jQueryMobile plugin [DateBox](http://dev.jtsage.com/jQM-DateBox/). This reduced user entry requirements from one field for each year, month, day, hour or minute (or more complex validation for each) to a single field for each date or time combination. Note: The plugin has since been updated to work with jQuery UI and Bootstrap.
 
 #####Form Validation
 ![Datebox Plugin](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/ValidatePlugin.png)
