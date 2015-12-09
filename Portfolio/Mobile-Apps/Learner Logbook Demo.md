@@ -31,9 +31,9 @@ My completed learner driver application features:
 
 - A simple, clear layout
 - Easy, centralized navigation using a splash screen and only 3 distinct page types:
-  1. *The main logbook page*, displaying user information, sum total hours achieved and navigation options.
-  2. *Data entry forms*, with a consistent and easy to understand design.
-  3. *A 'view records' page*, for each type of record stored. (excepting the learner driver, as there is only one).
+  1. **The main logbook page**, displaying user information, sum total hours achieved and navigation options.
+  2. **Data entry forms**, with a consistent and easy to understand design.
+  3. **A 'view records' page**, for each type of record stored. (excepting the learner driver, as there is only one).
 - Specialized data entry fields better suited to mobile users
 - A modular design for flexibility
 
