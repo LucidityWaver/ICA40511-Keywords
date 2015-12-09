@@ -40,10 +40,19 @@ My completed learner driver application features:
 
 #####Splash Page
 ![Learner Logbook Splash Page](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/LogbookSplash.png)
+
 The splash page is used to give the application time to load, if needed, and add conditional navigation. If there is no user data recorded, the application will navigate to the user entry form instead of the main logbook page.
 
 #####Main Page
 ![Learner Logbook Main](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/LogbookMain.png)
+
+This page summarizes the learner's logbook information into the key data points: the user, their license information and the hours they've accumulated (both overall and by category).
+
+Below the logbook summary, two select menus allow the user to set default vehicles or drivers for trips and provide a quick navigation option for adding a new driver or vehicle.
+
+There is a button for the user to record a trip semi-automatically, with the start and end times being recorded at the press of the start trip button, and then the stop trip button on the resulting pop-up. Manual trip entry is also possible, simply by clicking the enter trip link.
+
+Finally, links are also provided to view (and then edit or delete) existing trip, vehicle and supervisor records.
 
 #####User Entry
 ![Learner/User Entry Form](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/UserEntry.png)
