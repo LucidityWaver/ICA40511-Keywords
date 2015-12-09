@@ -4,7 +4,7 @@
 ![Learner Logbook Main](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/LogbookMain.png)
 
 ###The Project
-For the mobile applications subject of Holmesglen's IT Cert IV Programming course, students were required to design and create a logbook application for learner drivers. The application should make use of jQuery Mobile and Cordova / Apache Phonegap technologies to create a Web SQL (SQLite) database.
+For the mobile applications subject of Holmesglen's IT Cert IV Programming course, students were required to design and create a logbook application for learner drivers. The application must make use of jQuery Mobile and Cordova / Apache Phonegap technologies to create a Web SQL (SQLite) database.
 
 ####Project Requirements
 The project required documentation and application functions as follows:
@@ -27,11 +27,16 @@ The project required documentation and application functions as follows:
 - Accessible for Android devices
 
 ###The Completed Application
-The completed learner driver application provides the user simple, clear layout and navigation with a splash screen and 3 distinct page types.
+My completed learner driver application features:
 
-1. *The main logbook page*, displaying user information, sum total hours achieved and navigation options.
-2. *Data entry forms*, with a consistent and easy to understand design.
-3. *A 'view records' page*, for each type of record stored. (excepting the learner driver, as there is only one).
+- A simple, clear layout
+- Easy, centralized navigation using a splash screen and only 3 distinct page types:
+  1. *The main logbook page*, displaying user information, sum total hours achieved and navigation options.
+  2. *Data entry forms*, with a consistent and easy to understand design.
+  3. *A 'view records' page*, for each type of record stored. (excepting the learner driver, as there is only one).
+- Specialized data entry fields better suited to mobile users
+- A modular design for flexibility
+
 
 #####Splash Page
 ![Learner Logbook Splash Page](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/LogbookSplash.png)
