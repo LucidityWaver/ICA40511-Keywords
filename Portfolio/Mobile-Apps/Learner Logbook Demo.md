@@ -1,6 +1,5 @@
 ##Mobile Applications Assessment Task - Learner Driver Logbook
 
-###Note: Images not yet uploaded
 ![Learner Logbook Main](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/LogbookMain.png)
 
 ###The Project
@@ -88,5 +87,6 @@ Date and time entry was simplified using the jQueryMobile plugin [DateBox](http:
 
 #####Form Validation
 ![Datebox Plugin](https://github.com/LucidityWaver/ICA40511-NotesAndKeywords/blob/master/Portfolio/images/ValidatePlugin.png)
+
 The validation was performed using the [jQuery Validate Plugin](http://jqueryvalidation.org/)
 
